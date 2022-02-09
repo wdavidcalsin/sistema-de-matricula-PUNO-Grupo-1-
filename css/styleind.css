@@ -1,0 +1,165 @@
+* {
+    margin: opx;
+    padding: opx;
+    font-family: verdana;
+}
+
+/*.................................................*/
+
+/*...................inicio........................*/
+
+#inicio {
+    /*cabezera*/
+    background-color: #150000; /*ojo color*/
+    width: auto;
+    height: 170px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.titulo {
+    color: #ffffff;
+    font-family: Segoe UI;
+    font-weight: bolder;
+    text-align: center;
+}
+header {
+    /*color ataras*/
+    margin: 20px auto;
+    width: 750px;
+    height: 150px;
+    background-color: white; /*ojo color*/
+}
+
+div.contenedor {
+    width: 150px;
+    height: 150px;
+    float: left;
+    -webkit-transition: height 0.4s;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#uno {
+    background-color: rgb(208, 101, 3);
+}
+
+div#dos {
+    background-color: rgb(233, 147, 26);
+}
+
+div#tres {
+    background-color: rgb(22, 145, 190);
+}
+
+div#cuatro {
+    background-color: rgb(22, 107, 162);
+}
+
+div#cinco {
+    background-color: rgb(27, 54, 71);
+}
+
+img.icon {
+    display: block;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 40px;
+    padding: 20px;
+    -webkit-border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0);
+    -webkit-transition: box-shadow 0.4s;
+}
+
+p.texto {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    opacity: 0.6;
+    font-family: Segoe UI;
+    -webkit-transition: padding-top 0.4s;
+}
+div.contenedor:hover {
+    height: 170px;
+}
+div.contenedor:hover p.texto {
+    padding-top: 10px;
+    opacity: 1;
+}
+
+div.contenedor:hover img.icon {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.6);
+}
+/*.................................................*/
+
+/*...................galeria........................*/
+
+/*.container{
+	margin:10px auto; 
+	width: 750px;
+	height: 520px;
+	padding: 20px;
+	border:solid 1px #0b0b0b;
+	margin:auto;
+	background-color:#f1f1f1;
+
+}*/
+
+/*posicion una tras otra*/
+#slider > div {
+    position: absolute;
+    width: 100%;
+    heigth: 100%;
+}
+
+#slider {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    padding: 30px; /*agrandar borde negro igual*/
+    background-color: rgb(27, 54, 71);
+    margin: 0 auto;
+}
+
+/*...................palabras........................*/
+#cont {
+    background-color: #f1f1f1;
+    padding: 10px; /*tama�o del borde*/
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+#abajo {
+    background-color: black; /*ojo color*/
+
+    width: auto;
+    height: 120px; /*tama�o de color hacia abajo*/
+    text-align: center;
+    font-family: Segoe UI;
+    color: white; /*palabras*/
+}
+
+/*...................Registrar usuario.......................*/
+
+.sombra {
+    background-color: #ffffff; /*color de la sombra contenedor*/
+    padding: 20px;
+    width: 850px;
+    margin: auto; /*para centrar*/
+    display: none;
+}
+.inscribirse {
+    background-color: #fff;
+    width: 400px;
+    padding: 10px;
+    border: solid 1px #ccc;
+    margin: auto;
+}

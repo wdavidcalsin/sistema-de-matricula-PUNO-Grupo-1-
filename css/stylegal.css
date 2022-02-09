@@ -1,0 +1,46 @@
+*{
+	margin:opx;
+	padding:opx;
+	font-family: verdana;	
+}
+
+#inicio{/*cabezera*/
+	background-color:#150000;/*ojo color*/
+	width: auto;
+	height:170px;	
+	border-radius:20px 20px 20px 20px;
+}
+	
+.titulo{	
+	color: #ffffff;
+	font-family: Segoe UI;
+	font-weight: bolder;
+	text-align: center;
+}
+
+
+/*posicion una tras otra de las imagenes*/
+
+#img> div{
+	position: absolute;
+	width: 100%;
+	heigth:100%;	
+}
+
+#img{	
+position: relative;
+width:900px;
+height:500px;
+padding:30px;/*agrandar borde negro igual*/
+background-color:#ffffff;
+margin:0 auto;/*centra todo*/
+}	
+
+
+/*...........boton submenu.......*/
+
+#b{
+	background-color: rgb(22,107,162);
+	color:#0000ff;
+	
+}

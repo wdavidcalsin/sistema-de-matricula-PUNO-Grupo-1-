@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sistéma de Matrícula</title>
+
+        <link rel="stylesheet" type="text/css" href="css/stylemat.css" />
+        <link rel="stylesheet" type="text/css" href="css/styleind.css" />
+        <link rel="stylesheet" type="text/css" href="css/fondo.css" />
+
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+        <script>
+            // esto se ejecuta al cargar pagina
+            $(document).ready(function () {
+                $("#menu").load("menu.html"); //cargando el menu en el header
+                $("#pie").load("pie.html"); //cargando el pie en el footer
+            });
+
+            //control de slider de imagenes
+            $(function () {
+                $("#slider div:gt(0)").hide();
+                setInterval(function () {
+                    $("#slider div:first-child")
+                        .fadeOut(1000)
+                        .next("div")
+                        .fadeIn(900)
+                        .end()
+                        .appendTo("#slider");
+                }, 2000);
+                /*	$ . blockUI ({mensaje:  "<h1> <img src =" busy.gif "/> Un momento ... </ h1> '  })bloquear*/
+            });
+
+            /*se ejecuta para mostrar el contenido*/
+            $(document).ready(function () {
+                $("#b1").click(function () {
+                    $(".sombra").fadeIn(1000);
+                });
+
+                /*se ejecuta y desaparece el contenido*/
+                $("#b2").click(function () {
+                    $(".sombra").fadeOut(1000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- ..................................................... ............-->
+        <div id="inicio">
+            <div class="titulo">
+                <h1><em>Miguel Grau</em></h1>
+            </div>
+            <!-- iMAGEN DEL BANNER CENTRADA-->
+
+            <div class="logo">
+                <center><img src="img/logo-miguel-grau.png" height="100px" /></center>
+            </div>
+        </div>
+        <!-- ..................................................... ............-->
+
+        <header id="menu"><!-- Aqui estara el menu --></header>
+
+        <!-- ..................................................... ............-->
+
+        <div class="container">
+            <div id="slider">
+                <div>
+                    <img
+                        src="img/logo-portal.png"
+                        height="400px"
+                        width="600px"
+                    />
+                </div>
+                <div>
+                    <img src="img/puno2.jpg" height="400px" width="600px" />
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <!-- boton de entrada -->
+
+        <div id="b1" align="center">
+            <form name="form1" action="" method="post">
+                <input type="button" value="Inscribirse" />
+            </form>
+            <br />
+        </div>
+
+        <div class="sombra">
+            <div class="inscribirse">
+                <h1>Datos de Verificación:</h1>
+                <hr />
+                <form>
+                    <center>
+                        <table>
+                            <tr>
+                                <td>C.I.:</td>
+                                <td><input type="text" name:="nombre" ></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <!--<tr>
+								  <td>Correo:</td><td><input type="text" ></td>
+								  </tr>-->
+                        </table>
+                    </center>
+                </form>
+            </div>
+            <br />
+
+            <!-- boton de salida -->
+
+            <div id="b2" align="center">
+                <form name="form1" action="" method="post">
+                    <input type="button" value="Enviar" />
+                </form>
+                <br />
+            </div>
+        </div>
+        <br />
+        <br />
+
+        <div id="cont">
+            <h1>Sistema de Matricula PUNO</h1>
+
+            <hr />
+            <marquee behavior="alternate">Infórmate y Lee</marquee>
+            <br />
+            <p>
+                Este sistema tiene la facilidad de facilitar los trámites
+                legales de las matriculas a los estudiantes en beneficio de
+                nuestro perspectiva de este sistema.
+            </p>
+			<p>
+                <h4>Fue Desarrollado por:</h4> <br>
+				- CALSIN BORDA, Willian David <br>
+				- CHURA APAZA, Jean Marco <br>
+				- MAMANI COAQUIRA, Milton Roel <br>
+				- ANCALLA VELA, Hilmar <br>
+
+            </p>
+        </div>
+        </div>
+
+        <!-- ..................................................... ............-->
+
+        <footer id="pie"><!-- Aqui estara el pie --></footer>
+    </body>
+</html>

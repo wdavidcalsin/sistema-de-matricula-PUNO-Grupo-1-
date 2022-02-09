@@ -1,0 +1,41 @@
+*{
+	margin:opx;
+	padding:opx;
+	font-family: verdana;	
+}
+
+#inicio{/*cabezera*/
+	background-color:#150000;/*ojo color*/
+	width: auto;
+	height:170px;	
+	border-radius:20px 20px 20px 20px;
+}
+	
+.titulo{	
+	color: #ffffff;
+	font-family: Segoe UI;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#nomina{
+	background-color:#FFF;
+	WIDTH: 800PX;
+	padding:10px;
+	border: solid 1px #ccc;
+	margin: auto;
+	text-align: center;
+	}
+
+#lista{
+	text-align: center;
+	background-color:#FFF;
+	WIDTH: 800PX;
+	padding:10px;
+	border: solid 1px #ccc;
+	margin: auto;
+	background :lightblue;
+	display: none;
+	}
+	
+	

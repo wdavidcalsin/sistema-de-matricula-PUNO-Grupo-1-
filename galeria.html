@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sistéma de Matrícula</title>
+        <link rel="stylesheet" type="text/css" href="css/styleind.css" />
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/stylegal.css" />
+
+        <script>
+            $(document).ready(function () {
+                $("#menu").load("menu.html");
+                $("#pie").load("pie.html");
+            });
+
+            //control de slider de imagenes
+            $(function () {
+                $("#img div:gt(0)").hide();
+                setInterval(function () {
+                    $("#img div:first-child")
+                        .fadeOut(1000)
+                        .next("div")
+                        .fadeIn(900)
+                        .end()
+                        .appendTo("#img");
+                }, 2000);
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- ..................................................... ............-->
+        <div id="inicio">
+            <div class="titulo">
+                <h1><em>Miguel Grau</em></h1>
+            </div>
+            <!-- iMAGEN DEL BANNER CENTRADA-->
+
+            <div class="logo">
+                <center>
+                    <img src="img/logo-miguel-grau.png" height="100px" />
+                </center>
+            </div>
+        </div>
+
+        <!-- ..................................................... -->
+
+        <header id="menu"><!-- Aqui estara el menu --></header>
+        <br />
+        <div class="letra">
+            <center>
+                <h1><em>Galeria de fotos de la Institución</em></h1>
+            </center>
+        </div>
+        <br />
+        <div id="b" align="center">
+            <form name="form1" action="" method="post">
+                <input type="button" value="MINEDU" />
+                <input type="button" value="UNAP" />
+            </form>
+            <br />
+        </div>
+
+        <div class="container">
+            <div id="img">
+                <div>
+                    <img src="img/puno2.jpg" height="500px" width="900px" />
+                </div>
+                <div>
+                    <img src="img/puno3.jpg" height="500px" width="900px" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ..................................................... ............-->
+
+        <footer id="pie"><!-- Aqui estara el pie --></footer>
+    </body>
+</html>
